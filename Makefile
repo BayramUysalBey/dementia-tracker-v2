@@ -13,7 +13,7 @@ install: requirements.txt
 
 # FastAPI run command
 run:
-	$(PYTHON) -m uvicorn main:app --reload
+	$(PYTHON) -m uvicorn app:app --reload
 
 build: setup.py
 	$(PYTHON) setup.py build bdist_wheel
